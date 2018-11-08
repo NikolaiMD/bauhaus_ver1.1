@@ -1,0 +1,296 @@
+body{
+  background-color: #272727;
+  font-family: arial;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #cee002;
+}
+.container{
+  margin-right: 70px;
+  margin-left: 60px;
+  overflow: hidden;
+}
+nav.container{
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+nav.container li{
+  float: left;
+}
+/******************************/
+.brand{
+  float: left;
+  width: 780px;
+  height: 32px;
+}
+.logo:before{
+  content: "\25AC";
+  color: #272727;
+  display: block;
+  transform: rotate(-45deg) translate(-10px, -6px);
+}
+.logo{
+  display: block;
+  height: 22px;
+  width: 22px;
+  border: 5px solid white;
+}
+.first{
+  display: block;
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  width: 0;
+  height: 0;
+  top: -35px;
+  left: 45px;
+  color: white;
+}
+.brand>li:first-child>a span:last-child{
+  display: block;
+  position: relative;
+  font-size: 13px;
+  width: 0;
+  height: 0;
+  color: grey;
+  top: -11px;
+  left: 45px;
+}
+.brand>li:last-child{
+  float: right;
+  margin-top: 11px;
+}
+.brand>li:last-child>a{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.brand>li:last-child>a>span{
+  color: grey;
+  text-transform: uppercase;
+}
+.menu{
+  float: right;
+  height: 46px;
+  width: 400px;
+  border-left: 1px solid grey;
+  margin-top: -3px;
+}
+.menu>li:first-child{
+  margin-left: 60px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.menu>li:nth-child(2),li:nth-child(3),li:nth-child(4),li:nth-child(5){
+  margin-top: 14px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.menu>li:last-child{
+  margin-top: 10px;
+  margin-left: 113px;
+  font-size: 25px;
+}
+/*************************************************************************/
+main.container{
+  background-image: url(images/2.jpg);
+  background-size: 1350px;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 500px;
+}
+.project_info{
+  height: 380px;
+  width: 190px;
+  position: relative;
+  overflow: hidden;
+  top: 50px;
+  left: 305px;
+}
+.project_info .top, .right, .bottom, .left{
+  border: 2px solid #cee002;
+  position: relative;
+}
+.project_info .top{
+  width: 186px;
+  left: -190px;
+  top: 0;
+  -webkit-animation: ease-out 0.7s top;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes top{
+  0%{}
+  100%{top: 0; left: 0;}
+}
+.project_info .right{
+  width: 376px;
+  transform: rotate(90deg);
+  right: 2px;
+  top: -196px;
+  -webkit-animation: ease-out 0.7s right;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes right{
+  0%{}
+  100%{top: 184px; right: 2px;}
+}
+.project_info .bottom{
+  width: 186px;
+  right: -190px;
+  bottom: -368px;
+  position: relative;
+  -webkit-animation: ease-out 0.7s bottom;
+  animation-delay: 1.4s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes bottom{
+  0%{}
+  100%{right: 0; bottom: -368px;}
+}
+.project_info .left{
+  width: 376px;
+  transform: rotate(90deg);
+  left: -188px;
+  bottom: -556px;
+  -webkit-animation: ease-out 0.7s left;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes left{
+  0%{}
+  100%{left: -188px; bottom: -176px;}
+}
+/***************************************************************************/
+.project_info>div:nth-child(5){
+  width: 90px;
+  height: 12px;
+  position: relative;
+  top: 38px;
+  left: 40px;
+  overflow: hidden;
+}
+.project_info>div:nth-child(5) span{
+  display: block;
+  position: relative;
+  color: white;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: 750;
+  text-transform: uppercase;
+  right: -90px;
+  -webkit-animation: linear 2s top_anim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@-webkit-keyframes top_anim{
+  0%{letter-spacing: 10px;}
+  50%{letter-spacing: 7px;}
+  100%{right: 0; top: 0; letter-spacing: normal;}
+}
+.project_info>div:nth-child(6){
+  position: relative;
+  overflow: hidden;
+  top: 300px;
+  left: 60px;
+  -webkit-animation: linear 2s bottom_anim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@-webkit-keyframes bottom_anim{
+  0%{}
+  50%{}
+  100%{left: 40px;}
+}
+.project_info>div:nth-child(6)>a{
+  font-weight: bolder;
+  display: block;
+  position: relative;
+  left: -120px;
+  text-shadow: 1px 1px 1px grey;
+  -webkit-animation: linear 2s bottom_ref_anim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@-webkit-keyframes bottom_ref_anim{
+  0%{letter-spacing: -0.5em;}
+  50%{}
+  100%{left: 0; letter-spacing: normal;}
+}
+.project_info>div:nth-child(6)>a::after{
+  content: "\21FE";
+  margin-left: 10px;
+}
+/*********************************project_info+name*************************************/
+.name{
+  position: relative;
+  overflow: hidden;
+  color: white;
+  top: -220px;
+  left: 370px;
+  width: 263px;
+  -webkit-animation: linear 2s name_anim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@-webkit-keyframes name_anim{
+  0%{}
+  50%{}
+  100%{left: 345px};
+}
+.name>span:nth-child(1){
+  display: block;
+  position: relative;
+  left: -228px;
+  width: 218px;
+  font-family: arial;
+  font-size: 43px;
+  font-weight: bolder;
+  -webkit-animation: linear 2s top_name_anim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@-webkit-keyframes top_name_anim{
+  0%{letter-spacing: -0.5em;}
+  50%{}
+  100%{left: 0; letter-spacing: normal;}
+}
+.name>span:nth-child(2){
+  display: block;
+  position: relative;
+  left: -273px;
+  width: 263px;
+  font-family: arial;
+  font-size: 45px;
+  font-weight: bolder;
+  -webkit-animation: linear 2s mid_name_anim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@-webkit-keyframes mid_name_anim{
+  0%{letter-spacing: -0.5em;}
+  50%{}
+  100%{left: 0; letter-spacing: normal;}
+}
+.name>span:nth-child(3){
+  display: block;
+  position: relative;
+  left: -136px;
+  width: 126px;
+  font-family: arial;
+  font-size: 45px;
+  font-weight: bolder;
+  -webkit-animation: linear 2s bottom_name_anim;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@-webkit-keyframes bottom_name_anim{
+  0%{letter-spacing: -0.5em;}
+  50%{}
+  100%{left: 0; letter-spacing: normal;}
+}
